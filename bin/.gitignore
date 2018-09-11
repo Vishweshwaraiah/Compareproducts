@@ -1,9 +1,0 @@
-# git ignore file
-
-.settings
-
-# Eclipse artifacts, including WTP generated manifests
-.classpath
-.project
-
-.springBeans

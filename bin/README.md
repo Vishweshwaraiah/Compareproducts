@@ -1,2 +1,0 @@
-# Compareproducts
-Compare your products
