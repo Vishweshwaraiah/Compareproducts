@@ -1,4 +1,4 @@
-package com.projectdiya.ProjectDiya.model;
+package com.projectdiya.Vishyle.model;
 
 public class User {
 	private String userName;

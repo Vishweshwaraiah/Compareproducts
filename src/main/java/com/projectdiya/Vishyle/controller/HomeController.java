@@ -1,4 +1,4 @@
-package com.projectdiya.ProjectDiya.controller;
+package com.projectdiya.Vishyle.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.projectdiya.ProjectDiya.model.User;
+import com.projectdiya.Vishyle.model.User;
 
 /**
  * Handles requests for the application home page.
