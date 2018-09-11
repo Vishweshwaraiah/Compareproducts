@@ -1,6 +1,7 @@
-<jsp:include page='commons/header.jsp'>
+<jsp:include page='commons/headerHome.jsp'>
     <jsp:param name="articleId" value="Home"/>
 </jsp:include>
+
 <!-- Page Content -->
 <div class="container">
 
@@ -153,6 +154,7 @@
 
     </div>
 <!-- /.container -->
-<jsp:include page='commons/footer.jsp'>
+
+<jsp:include page='commons/footerCommon.jsp'>
     <jsp:param name="articleId" value="Home"/>
 </jsp:include>
