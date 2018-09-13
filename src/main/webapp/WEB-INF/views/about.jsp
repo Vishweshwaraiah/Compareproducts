@@ -117,6 +117,10 @@
 </div>
 <!-- /.container -->
 
+<jsp:include page='commons/commonScripts.jsp'>
+    <jsp:param name="articleId" value="About"/>
+</jsp:include>
+
 <jsp:include page='commons/footerCommon.jsp'>
-	<jsp:param name="articleId" value="About us" />
+	<jsp:param name="articleId" value="About" />
 </jsp:include>

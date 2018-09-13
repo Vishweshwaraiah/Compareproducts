@@ -23,6 +23,10 @@
 </div>
 <!-- /.container -->
 
+<jsp:include page='commons/commonScripts.jsp'>
+    <jsp:param name="articleId" value="Home"/>
+</jsp:include>
+
 <jsp:include page='commons/footerCommon.jsp'>
 	<jsp:param name="articleId" value="Home" />
 </jsp:include>

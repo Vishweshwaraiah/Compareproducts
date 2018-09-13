@@ -37,6 +37,10 @@
 </div>
 <!-- /.container -->
 
+<jsp:include page='commons/commonScripts.jsp'>
+    <jsp:param name="articleId" value="User"/>
+</jsp:include>
+
 <jsp:include page='commons/footerCommon.jsp'>
-	<jsp:param name="articleId" value="Home" />
+	<jsp:param name="articleId" value="User" />
 </jsp:include>

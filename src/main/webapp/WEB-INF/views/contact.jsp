@@ -1,5 +1,5 @@
 <jsp:include page='commons/headerCommon.jsp'>
-    <jsp:param name="articleId" value="Contact"/>
+	<jsp:param name="articleId" value="Contact" />
 </jsp:include>
 
 <!-- Page Content -->
@@ -17,11 +17,8 @@
 	<!-- Content Row -->
 	<div class="row">
 		<!-- Map Column -->
-		<div class="col-lg-8 mb-4">
+		<div class="col-lg-8 mb-4" id="map">
 			<!-- Embedded Google Map -->
-			<iframe width="100%" height="400px" frameborder="0" scrolling="no"
-				marginheight="0" marginwidth="0"
-				src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
 		</div>
 		<!-- Contact Details Column -->
 		<div class="col-lg-4 mb-4">
@@ -93,6 +90,11 @@
 </div>
 <!-- /.container -->
 
+<jsp:include page='commons/commonScripts.jsp'>
+	<jsp:param name="articleId" value="Contact" />
+</jsp:include>
+<script src="resources/js/contactMe.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTWeKxIm5lQAJyPsDERh24-N8KULhnuN0&callback=initMap"></script>
 <jsp:include page='commons/footerCommon.jsp'>
-    <jsp:param name="articleId" value="Home"/>
+	<jsp:param name="articleId" value="Home" />
 </jsp:include>
