@@ -73,9 +73,9 @@ public class HomeController {
 	@RequestMapping(value = "/{parameterValue}", method = RequestMethod.GET)
 	public String redirect(Model model, @PathVariable(value = "parameterValue") String parameterValue) {
 		System.out.println("The URL is: " + parameterValue);
-		
+
 		model.addAttribute("activeIs", parameterValue);
-		
+
 		return parameterValue;
 	}
 
