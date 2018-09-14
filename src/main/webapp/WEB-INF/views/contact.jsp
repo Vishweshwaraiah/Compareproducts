@@ -93,8 +93,9 @@
 <jsp:include page='commons/commonScripts.jsp'>
 	<jsp:param name="articleId" value="Contact" />
 </jsp:include>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqaqy41Kp_CbxkFCN1q0EKs5UGkO9Uzdk&callback=initMap"></script>
+<script src="resources/js/jqBootstrapValidation.js"></script>
 <script src="resources/js/contactMe.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTWeKxIm5lQAJyPsDERh24-N8KULhnuN0&callback=initMap"></script>
 <jsp:include page='commons/footerCommon.jsp'>
 	<jsp:param name="articleId" value="Home" />
 </jsp:include>

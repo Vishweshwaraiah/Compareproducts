@@ -72,7 +72,7 @@ $(function() {
 //Initialize and add the map
 function initMap() {
   // The location of Bengaluru
-  var Bengaluru = {lat: 12.9716, lng: 77.5946};
+  var Bengaluru = {lat: 13.052411, lng: 77.453804};
   // The map, centered at Bengaluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: Bengaluru});
