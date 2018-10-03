@@ -14,14 +14,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Modern Business - <%=request.getParameter("articleId")%></title>
+<title>Vishyle - <%=request.getParameter("articleId")%></title>
 
 <!-- Bootstrap core CSS -->
-<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
+<link href="<c:url value="/resources/vendor/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="resources/css/modern-business.css" rel="stylesheet">
+<link href="<c:url value="/resources/css/vishyleMain.css" />" rel="stylesheet">
 
 </head>
 
@@ -41,8 +40,8 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" onclick="menuMaker('myPage')" href="about">About</a>
-					</li>
+					<li class="nav-item"><a class="nav-link"
+						onclick="menuMaker('myPage')" href="about">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="services">Services</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="contact">Contact</a>
