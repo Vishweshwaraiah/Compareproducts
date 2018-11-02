@@ -7,7 +7,7 @@ import java.util.Locale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +19,7 @@ import com.projectdiya.Vishyle.model.User;
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping("/")
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -26,8 +27,8 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String index(Locale locale, Model model) {
+	@RequestMapping(method = RequestMethod.GET)
+	public String index(Locale locale, ModelMap model) {
 		logger.info("Welcome to Project Diya! The client locale is {}.", locale);
 
 		Date date = new Date();
@@ -41,7 +42,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String home(Locale locale, ModelMap model) {
 		logger.info("Welcome to Project Diya! The client locale is {}.", locale);
 
 		Date date = new Date();
@@ -55,7 +56,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
-	public String user(Model model) {
+	public String user(ModelMap model) {
 		logger.info("User page is requested but with GET method");
 
 		model.addAttribute("error", "This is not supported. Please re-submit the form!");
@@ -63,7 +64,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
-	public String user(@Validated User user, Model model) {
+	public String user(@Validated User user, ModelMap model) {
 		logger.info("User page is requested.");
 
 		model.addAttribute("userName", user.getUserName());
@@ -71,7 +72,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/{parameterValue}", method = RequestMethod.GET)
-	public String redirect(Model model, @PathVariable(value = "parameterValue") String parameterValue) {
+	public String redirect(ModelMap model, @PathVariable(value = "parameterValue") String parameterValue) {
 		System.out.println("The URL is: " + parameterValue);
 
 		model.addAttribute("activeIs", parameterValue);
