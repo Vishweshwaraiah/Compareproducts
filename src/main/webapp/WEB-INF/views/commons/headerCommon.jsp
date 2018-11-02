@@ -11,8 +11,10 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="a vish-master's project">
+<meta name="author" content="vish-master">
+
+<link rel="icon" href="<c:url value="/resources/imgs/favicon.ico" />" >
 
 <title>Vishyle - <%=request.getParameter("articleId")%></title>
 

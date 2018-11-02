@@ -130,6 +130,7 @@
 			<groupId>com.github.warmuuh</groupId>
 			<artifactId>libsass-maven-plugin</artifactId>
 			<version>0.2.10-libsass_3.5.3</version>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>
@@ -169,7 +170,7 @@
 					<mainClass>org.test.int1.Main</mainClass>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>com.github.warmuuh</groupId>
 				<artifactId>libsass-maven-plugin</artifactId>
 				<version>0.2.10-libsass_3.5.3</version>
@@ -186,7 +187,7 @@
 					<outputPath>${basedir}/src/main/webapp/resources/css/</outputPath>
 					<includePath>${basedir}/src/main/webapp/resources/sass/plugins/</includePath>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>

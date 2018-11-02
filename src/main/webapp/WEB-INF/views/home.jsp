@@ -7,6 +7,8 @@
 <!-- Custom styles for this page -->
 <link href="<c:url value="/resources/css/v-Home.css" />"
 	rel="stylesheet">
+<link href="<c:url value="/resources/css/v-Slider.css" />"
+	rel="stylesheet">
 
 <!-- Page Content -->
 <div class="container">
@@ -24,16 +26,22 @@
 	<!-- Vue Slider -->
 
 	<div id="image-slider">
-		<p>
-			<a @click="prev" href='#'>Previous</a> || <a @click="next" href='#'>Next</a>
+	
+		<p class='slider-navs slider-navs-prev'>
+			<a class='slider-navs-p' @click="prev">&laquo; Previous</a>
 		</p>
 	
-		<transition-group name='fade' tag='div'>
-			<div v-for="number in [currentNumber]" :key='number'>
+		<transition-group name='fade' tag='div' class='slider-parent'>
+			<div v-for="number in [currentNumber]" :key='number' class='slider-container'>
 				<img :src="currentImage" v-on:mouseover="stopRotation"
 					v-on:mouseout="startRotation" />
 			</div>
-		</transition-group> 
+		</transition-group>
+		
+		<p class='slider-navs slider-navs-next'>
+			<a class='slider-navs-p' @click="next" >Next &raquo;</a>
+		</p>
+		
 	</div>
 
 	<form action="user" method="post">
@@ -48,7 +56,7 @@
 	<jsp:param name="articleId" value="Home" />
 </jsp:include>
 
-<script src="<c:url value="/resources/js/v-Home.js" />"></script>
+<script src="<c:url value="/resources/js/v-Slider.js" />"></script>
 
 <jsp:include page='commons/footerCommon.jsp'>
 	<jsp:param name="articleId" value="Home" />
