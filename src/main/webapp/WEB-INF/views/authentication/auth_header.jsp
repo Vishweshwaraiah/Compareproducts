@@ -29,8 +29,3 @@
 
 </head>
 <body>
-
-	<!-- Navigation -->
-	<jsp:include page='../commons/navigator.jsp'>
-		<jsp:param name="articleId" value="Navigation" />
-	</jsp:include>

@@ -2,11 +2,16 @@ new Vue({
 	el : '#image-slider',
 	data : {
 		images : [ 
-					'http://i.imgur.com/vYdoAKu.jpg',
-					'http://i.imgur.com/PUD9HQL.jpg',
-					'http://i.imgur.com/Lfv18Sb.jpg',
-					'http://i.imgur.com/tmVJtna.jpg',
-					'http://i.imgur.com/ZfFAkWZ.jpg' 
+					'resources/imgs/slides/slide-01.jpg',
+					'resources/imgs/slides/slide-02.jpg',
+					'resources/imgs/slides/slide-03.jpg',
+					'resources/imgs/slides/slide-04.jpg',
+					'resources/imgs/slides/slide-05.jpg',
+					'resources/imgs/slides/slide-06.jpg',
+					'resources/imgs/slides/slide-07.jpg',
+					'resources/imgs/slides/slide-08.jpg',
+					'resources/imgs/slides/slide-09.jpg',
+					'resources/imgs/slides/slide-10.jpg'
 				],
 		currentNumber : 0,
 		timer : null
