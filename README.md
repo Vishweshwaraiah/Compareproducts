@@ -1,2 +1,2 @@
-# Compareproducts
-Compare your products
+# Vishyle
+This is a practice project and this can used by anybody...
