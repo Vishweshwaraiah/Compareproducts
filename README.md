@@ -1,2 +1,2 @@
-# Vishyle
-This is a practice project and this can used by anybody...
+# Project Vishyle
+This is a Startup project which can be used for any new innovative ideas.
